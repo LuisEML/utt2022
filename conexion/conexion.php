@@ -6,7 +6,7 @@
 
     // $con = @mysqli_connect($servidor, $usuario, $clave,$bdName);   
     $con = mysqli_init();
-    mysqli_ssl_set($conn,NULL,NULL,"ssl/BaltimoreCyberTrustRoot.crt.pem",NULL,NULL);
+    mysqli_ssl_set($con,NULL,NULL,"ssl/BaltimoreCyberTrustRoot.crt.pem",NULL,NULL);
     mysqli_real_connect($con, $servidor, $usuario, $clave, $bdName, 3306, MYSQLI_CLIENT_SSL);
     
     
